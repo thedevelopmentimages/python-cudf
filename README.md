@@ -30,8 +30,9 @@ Images via [NVIDIA GPU Cloud (NGC)](https://catalog.ngc.nvidia.com)
 ## Remote Development
 
 ```shell
-docker run --rm --gpus all -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(pwd)",target=/app \
-  -v ~/.aws:/home/rapids/.aws ...
+docker run --rm --gpus all -i -t -p 127.0.0.1:10000:8888 -w /app \
+	--mount type=bind,src="$(pwd)",target=/app \
+	-v ~/.aws:/home/rapids/.aws ...
 ```
 
 Note:
