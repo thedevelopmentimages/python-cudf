@@ -9,7 +9,7 @@ def main():
     Entry point.  Use this simple template as a starting point for
     rapids.ai dependent, i.e., GPU (Graphics Processing Unit) accelerated, programs.
 
-    If run as-is, a sample 200,000 integers, within [1  16), will be generated, and
+    If run as-is, a sample 200,000 integers, within [1  15], will be generated, and
     the frequency of each distinct number determined.
 
     :return:
