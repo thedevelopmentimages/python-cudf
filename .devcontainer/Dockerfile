@@ -1,5 +1,5 @@
 # Base: This is a non-root container image 
-FROM nvcr.io/nvidia/rapidsai/base:24.02-cuda12.0-py3.10
+FROM nvcr.io/nvidia/rapidsai/base:24.06-cuda12.2-py3.10
 
 # If the steps of a `Dockerfile` use files that are different from the `context` file, COPY the
 # file of each step separately; and RUN the file immediately after COPY
