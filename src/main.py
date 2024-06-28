@@ -24,7 +24,7 @@ def main():
     data = example.exc()
     logger.info(data.head())
 
-    
+
 if __name__ == '__main__':
     root = os.getcwd()
     sys.path.append(root)
