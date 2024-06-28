@@ -9,6 +9,10 @@ def main():
     logger = logging.getLogger(__name__)
     logger.info('CUDF')
 
+    example = src.algorithms.example.Example()
+    data = example.exc()
+    logger.info(data.head())
+
     
 if __name__ == '__main__':
     root = os.getcwd()
@@ -21,5 +25,7 @@ if __name__ == '__main__':
 
     # Activate graphics processing units
     os.environ['CUDA_VISIBLE_DEVICES']='0'
+
+    import src.algorithms.example
 
     main()
