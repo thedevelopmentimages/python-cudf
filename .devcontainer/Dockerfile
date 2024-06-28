@@ -7,7 +7,8 @@ WORKDIR /app
 COPY /.devcontainer/requirements.txt /app
 
 # pip
-RUN pip install --upgrade pip && conda install -n base --file requirements.txt
+RUN pip install --upgrade pip && \
+    conda install -n base --file requirements.txt
 
 # Port
 EXPOSE 8050
