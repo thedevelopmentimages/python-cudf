@@ -1,6 +1,3 @@
-boto3
-botocore
-s3fs
 pytest
 coverage
 pytest-cov
