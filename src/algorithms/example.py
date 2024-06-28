@@ -30,7 +30,7 @@ class Example:
             frame: A frequency table
         """
 
-        self.__logger.info('Sampling: A random sample of 200,000 integers within [1 16)')
+        self.__logger.info('Sampling: A random sample of 200,000 integers within [1  16), i.e., [1  15]')
         numbers: np.ndarray = cupy.random.randint(low=1, high=16, size=200000)
 
         # Frequencies
