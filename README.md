@@ -1,6 +1,15 @@
 
 <br>
 
+[![Template for rapids.ai](https://github.com/thetemplates/python-cudf/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/thetemplates/python-cudf/actions/workflows/main.yml)
+
+<br>
+
+[![Template for rapids.ai](https://github.com/thetemplates/python-cudf/actions/workflows/main.yml/badge.svg?branch=develop)](https://github.com/thetemplates/python-cudf/actions/workflows/main.yml)
+
+
+<br>
+
 ## RAPIDS
 
 This template is for developing [rapids.ai](https://rapids.ai) dependent products; [rapids.ai](https://rapids.ai) enables graphics processing unit accelerated data science.
