@@ -37,6 +37,7 @@ if __name__ == '__main__':
     # Activate graphics processing units
     os.environ['CUDA_VISIBLE_DEVICES']='0'
 
+    # Modules
     import src.algorithms.example
 
     main()
