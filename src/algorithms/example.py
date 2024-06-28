@@ -25,15 +25,16 @@ class Example:
 
     def exc(self) -> pd.DataFrame:
         """
-        
-        Random numbers
+
+        :return:
+            frame: A frequency table
         """
 
-        # A sample of 200,000 random integers within [1 16)
+        self.__logger.info('Sampling: A random sample of 200,000 integers within [1 16)')
         numbers: np.ndarray = cupy.random.randint(low=1, high=16, size=200000)
-        frequency: cudf.Series = cudf.Series(data=numbers).value_counts()
 
         # Frequencies
+        frequency: cudf.Series = cudf.Series(data=numbers).value_counts()
         frame = cudf.DataFrame(data={'value': frequency.index, 'frequency': frequency})
 
         return frame
